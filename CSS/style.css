@@ -25,6 +25,19 @@ html {
     height: 85%;
     width: 30%;
     text-align: right;
+    position: relative;
+    left: -50rem;
+    animation:slide-from-left 3.5s ease-in-out forwards;
+    transition: all 1s;
+}
+@keyframes slide-from-left{
+    80% {left: 1rem;}
+    100% {left: 0;}
+}
+.movie-poster-container img:hover{
+    transform: scale(1.1);
+    box-shadow: 8px 8px 8px -4px rgb(175, 171, 171);
+
 }
 
 .movie-poster{
@@ -39,7 +52,15 @@ html {
     /*background-color: blue;*/
     color: rgb(255, 255, 255);
     padding-top: 2rem;
+    animation: text-appear 3.5s ease-in-out forwards;
+    opacity: 0;
 }
+
+@keyframes text-appear {
+    100% {opacity: 1};
+    font-size
+}
+
 
 .movie-info-title{
     text-transform: capitalize;
